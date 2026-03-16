@@ -1,0 +1,40 @@
+##              inicializa git
+git init
+
+##              cria o .gitignore
+New-Item .gitignore
+#cole no arquivo:
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Poetry / Ambientes virtuais
+.venv/
+venv/
+*.egg-info/
+
+# PyCharm / IDEs
+.idea/
+
+# Variáveis de ambiente
+.env
+
+# Django
+*.sqlite3
+/staticfiles/
+/media/
+
+##              adiciona tudo no git e dá commit
+git add .
+git commit -m "primeiro commit"
+
+##              crie o repositório no github
+
+##              Conectar e subir para o GitHub
+git remote add origin git@github.com:heifetzjr/django.git
+git branch -M main
+git push -u origin main
+
