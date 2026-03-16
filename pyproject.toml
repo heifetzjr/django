@@ -1,0 +1,15 @@
+[project]
+name = "django_project"
+version = "0.1.0"
+description = "Iniciando os estudos com python web usando django"
+authors = [
+    {name = "Antonio Bernardo Dos Santos Junior",email = "bernardojunior.ccb@gmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "git @ file:///C:/Users/anton/OneDrive/Desktop/django/github.com%3Aheifetzjr/django.git"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

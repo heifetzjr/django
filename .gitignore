@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Poetry / Ambientes virtuais
+.venv/
+venv/
+*.egg-info/
+
+# PyCharm / IDEs
+.idea/
+
+# Variáveis de ambiente
+.env
+
+# Django
+*.sqlite3
+/staticfiles/
+/media/
