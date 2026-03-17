@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Estudantes{% endblock %}
+
+{% block content %}
+    <div class="actions" style="margin-bottom: 1rem;">
+        <a class="btn btn-primary" href="{% url 'school:student_create' %}">
+            + Novo Estudante
+        </a>
+    </div>
+
+    {% if students %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Data de Nascimento</th>
+                    <th style="width: 150px;">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                    <tr>
+                        <td>{{ student.name }}</td>
+                        <td>{{ student.email }}</td>
+                        <td>{{ student.birth_date|default:"-" }}</td>
+                        <td>
+                            <a class="btn btn-link" href="{% url 'school:student_update' student.pk %}">
+                                <img class="icone-editar-deletar" src="https://img.icons8.com/?size=100&id=tKvnEzfDG1hI&format=png&color=000000" alt="icone editar">
+                            </a>
+                            <a class="btn btn-link" href="{% url 'school:student_delete' student.pk %}">
+                                <img class="icone-editar-deletar" src="https://img.icons8.com/?size=100&id=4B0kCMNiLlmW&format=png&color=000000" alt="icone deletar">
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="text-muted">Nenhum estudante cadastrado ainda.</p>
+    {% endif %}
+{% endblock %}
