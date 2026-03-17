@@ -40,5 +40,14 @@ poetry env remove django-project-FqhEPHxa-py3.14
 ####AMBIENTE VIRTUAL######
 python -m venv .venv
 
+pip install django
+
+## instala e atualiza
+python -m pip install pip setuptools wheel --upgrade
+
+deixa o pip atualizado (melhor compatibilidade com pacotes novos);
+instala ou atualiza o setuptools (empacotamento/instalação de libs);
+instala ou atualiza o wheel (formato de pacote pré‑compilado, instala mais rápido e com menos erro).
+
 
 
