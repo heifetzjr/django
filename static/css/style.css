@@ -97,6 +97,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 0.5rem 0.9rem;
+    margin: auto 5px;
     border-radius: var(--radius);
     border: none;
     cursor: pointer;
@@ -126,11 +127,13 @@ h1 {
 .btn-link {
     background: transparent;
     color: var(--primary);
+}
+
+table .btn-link {
     outline: 1px solid transparent;
     padding: 0;
     width: 25px;
     padding: 2px;
-
     &:hover {
        outline-color: #2563eb;
     }
