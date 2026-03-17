@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('school.urls')),  # rota raiz envia para o app school
+    path('admin/', admin.site.urls),  # rota raiz envia para o app school
+    path('', include('recipes.urls'))
 ]

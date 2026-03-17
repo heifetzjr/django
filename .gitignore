@@ -1,0 +1,177 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ======================
+# Ambiente virtual
+# ======================
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+Pipfile.lock
+
+# ======================
+# Django
+# ======================
+*.sqlite3
+*.sqlite3-journal
+/staticfiles/
+/static/
+/media/
+local_settings.py
+
+# ======================
+# Segredos e variáveis de ambiente
+# ======================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# ======================
+# Celery
+# ======================
+celerybeat-schedule
+celerybeat.pid
+
+# ======================
+# Redis / Cache
+# ======================
+dump.rdb
+
+# ======================
+# Banco de dados
+# ======================
+*.db
+*.sql
+*.dump
+db.sqlite3-journal
+
+# ======================
+# Docker
+# ======================
+.dockerignore
+docker-compose.override.yml
+
+# ======================
+# Testes e cobertura
+# ======================
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+test-results/
+
+# ======================
+# Documentação
+# ======================
+/docs/_build/
+/site/
+
+# ======================
+# Distribuição / empacotamento
+# ======================
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+wheels/
+
+# ======================
+# Type checking
+# ======================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyright/
+
+# ======================
+# Jupyter Notebook
+# ======================
+.ipynb_checkpoints
+*.ipynb
+
+# ======================
+# IDEs e editores
+# ======================
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# ======================
+# Sistema operacional
+# ======================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ======================
+# Logs
+# ======================
+*.log
+logs/
+log/
+
+# ======================
+# Uploads temporários
+# ======================
+/tmp/
+/temp/
+
+# ======================
+# Node (se usar frontend com npm/webpack)
+# ======================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm/
+
+# ======================
+# Sass / CSS compilado
+# ======================
+*.css.map
+*.sass.cache/
+
+# ======================
+# Translations
+# ======================
+*.mo
+
+# ======================
+# Sentry
+# ======================
+.sentryclirc
